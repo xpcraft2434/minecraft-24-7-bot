@@ -4,9 +4,9 @@ const autoAuth = require('mineflayer-auto-auth');
 
 // === CONFIGURATION ===
 const config = {
-  host: 'SERVER_IP', // <-- Set your server IP here
-  port: 25565,       // <-- Set your server port here
-  username: 'xpcraft', // <-- Set your bot username here
+  host: 'firewallsmp.aternos.me', // <-- Set your server IP here
+  port: 40858,       // <-- Set your server port here
+  username: '247GAMEBOY', // <-- Set your bot username here
   version: '1.16.5',    // Set to your server version
   autoNightSkip: true, // Set to true to skip night if possible
   antiAfk: true,     // Enable anti-AFK
@@ -30,14 +30,14 @@ function createBot() {
   bot.on('spawn', () => {
     if (bot.autoAuth) {
       bot.autoAuth.options = {
-        password: 'password', // Change if needed
+        password: '247gameboy', // Change if needed
         logging: true
       };
     }
     // Make the bot say a message when it joins
     setTimeout(() => {
-      bot.chat('xpcraft programmed me');
-    }, 2000); // Wait 2 seconds after spawn
+      bot.chat('ily gaming');
+    }, 2000 ); // Wait 2 seconds after spawn
   });
 
   // === Anti-AFK Movement ===
@@ -102,5 +102,6 @@ function createBot() {
   bot.on('kicked', (reason) => console.log('Kicked:', reason));
   bot.on('error', (err) => console.log('Error:', err));
 }
+
 
 createBot(); 
