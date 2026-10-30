@@ -4,11 +4,11 @@ const autoAuth = require('mineflayer-auto-auth');
 
 // === CONFIGURATION ===
 const config = {
-  host: 'SERVER_IP', // <-- Set your server IP here
+  host: 'REXOLSMP.aternos.me', // <-- Set your server IP here
   port: 25565,       // <-- Set your server port here
   username: 'xpcraft', // <-- Set your bot username here
-  version: '1.16.5',    // Set to your server version
-  autoNightSkip: true, // Set to true to skip night if possible
+  version: '26.3',    // Set to your server version
+  autoNightSkip: false, // Set to true to skip night if possible
   antiAfk: true,     // Enable anti-AFK
   antiAfkInterval: 60 * 1000, // ms between anti-AFK actions
 };
